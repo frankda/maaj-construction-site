@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $color-body;
+}
+
+header {
+  background-color: $color-primary;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// override bootstrap styling
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}

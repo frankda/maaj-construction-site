@@ -1,0 +1,43 @@
+$box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+
+$desktop-header-height: 60px;
+
+$color-body: darkgrey;
+$color-primary: #2e3550;
+$color-light: #e0e0e0;
+$white: #fff;
+$black: #000;
+
+// font sizes
+$font-size-base: 1rem;
+$font-size-base-px: 16px;
+$font-size-xs: $font-size-base * 0.75;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.125;
+$font-size-xl: $font-size-base * 1.75;
+
+// font sizes: headings
+// h6
+$h6-font-size: $font-size-base-px * 1.25;
+$h6-font-size-min: $h6-font-size * 0.66;
+// h5
+$h5-font-size: $font-size-base-px * 1.625;
+$h5-font-size-min: $h5-font-size * 0.66;
+// h4
+$h4-font-size: $font-size-base-px * 1.5;
+$h4-font-size-min: $h4-font-size * 0.66;
+// h3
+$h3-font-size: $font-size-base-px * 2;
+$h3-font-size-min: $h3-font-size * 0.66;
+// h2
+$h2-font-size: $font-size-base-px * 3;
+$h2-font-size-min: $h2-font-size * 0.6;
+// h1
+$h1-font-size: $font-size-base-px * 3.625;
+$h1-font-size-min: $h1-font-size * 0.621;
+
+// components
+$banner-tilt-height: 200px;
+
+// interact
+$interact: '&:focus, &:hover, &:active';

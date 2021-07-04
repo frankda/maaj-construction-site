@@ -1,0 +1,17 @@
+// settings
+// --------------------------------------------------
+
+@import '../css/settings/variables';
+
+// libraries
+// --------------------------------------------------
+
+// bootstrap - components commented out - https://getbootstrap.com/docs/5.0/
+@import '~bootstrap/dist/css/bootstrap-grid.css';
+@import '~bootstrap/dist/css/bootstrap-utilities.css';
+
+// elements
+// --------------------------------------------------
+
+@import '../css/elements/base';
+@import '../css/elements/typography';

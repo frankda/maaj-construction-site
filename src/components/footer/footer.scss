@@ -1,0 +1,19 @@
+.footer {
+  padding: 50px 0 0 0;
+  background-color: $color-primary;
+  &__section-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__link {
+  }
+  &__contact-text {
+    display: inline-block;
+    margin: 0 0 0 12px;
+  }
+  &__bot-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+}

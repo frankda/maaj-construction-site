@@ -1,0 +1,49 @@
+.global-nav {
+    z-index: 500;
+    max-width: inherit;
+    margin: auto;
+    width: 100%;
+
+    &--scroll-up {
+        position: fixed;
+        transform: translateY(0);
+        transition: 0.2s;
+        padding-left: inherit;
+        padding-right: inherit;
+        left: 0;
+        right: 0;
+    }
+    &--scroll-down {
+        position: absolute;
+        transform: translateY(-100%);
+        box-shadow: $box-shadow;
+    }
+
+    &__brand-container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    &__brand {
+        flex-grow: 1;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    &__nav-links {
+        margin-right: 31px;
+    }
+    &__nav-link {
+        margin-right: 25px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+        color: $color-light;
+
+        &:last-child {
+        margin-right: 0;
+        }
+    }
+}
