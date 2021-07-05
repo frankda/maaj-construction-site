@@ -8,6 +8,7 @@ import CardIcon from '../components/card-icon/card-icon';
 import Section from '../components/section/section';
 import CardGroup from '../components/card-group/card-group';
 import Footer from '../components/footer/footer';
+import Projects from '../components/projects/projects';
 
 // configuration
 import '../config/fontawesome';
@@ -23,6 +24,8 @@ const IndexPage = () => {
       </header>
       <main>
         <Banner />
+
+        {/* What we offer section */}
         <Section>
           <h2>What we offer</h2>
           <CardGroup>
@@ -37,6 +40,12 @@ const IndexPage = () => {
               description="des1"
             ></CardIcon>
           </CardGroup>
+        </Section>
+
+        {/* Projects section */}
+        <Section>
+          <h2>Our Projects</h2>
+          <Projects />
         </Section>
       </main>
 
