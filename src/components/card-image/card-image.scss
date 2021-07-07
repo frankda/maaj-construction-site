@@ -1,0 +1,44 @@
+.card-image {
+  position: relative;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  margin: 8px;
+  padding: 0 12px 12px 12px;
+  display: flex;
+  align-items: flex-end;
+
+  &:hover {
+    .card-image__content {
+      height: 240px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, $color-primary, rgba($black, 0.5) 60%);
+  }
+  &__content {
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: lightgray;
+    height: 80px;
+    cursor: pointer;
+    transition: height $timing-fast $easing;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__cta {
+    margin: 0;
+  }
+  &__description {
+    margin: 0;
+  }
+}

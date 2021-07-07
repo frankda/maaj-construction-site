@@ -1,3 +1,10 @@
+// layout
+// breakpoints
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1400px;
+
 $box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
 
 $desktop-header-height: 60px;
@@ -7,6 +14,21 @@ $color-primary: #2e3550;
 $color-light: #e0e0e0;
 $white: #fff;
 $black: #000;
+
+// animation
+// timing
+$timing-base: 0.1s;
+$timing-fastest: $timing-base;
+$timing-faster: $timing-base * 2;
+$timing-fast: $timing-base * 3;
+$timing-medium: $timing-base * 5;
+$timing-slow: $timing-base * 7;
+$timing-slower: $timing-base * 8;
+$timing-slowest: $timing-base * 9;
+
+// easing
+$easing: ease-in-out;
+
 
 // font sizes
 $font-size-base: 1rem;
