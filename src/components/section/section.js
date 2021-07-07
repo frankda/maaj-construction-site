@@ -4,7 +4,11 @@ import './section.scss';
 const Section = (props) => {
   return (
     <section className="container section">
-      {props.children}
+      <div className="row">
+        <div className="col">
+          {props.children}
+        </div>
+      </div>
     </section>
   )
 }

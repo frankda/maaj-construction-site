@@ -1,0 +1,9 @@
+.projects {
+  &__slick-container {
+    padding: 0 32px;
+  }
+
+  @media (min-width: $md) {
+    padding: 0;
+  }
+}
