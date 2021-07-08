@@ -12,6 +12,9 @@
     .card-image__content {
       height: 240px;
     }
+    .card-image__description p {
+      opacity: 1;
+    }
   }
 
   &__overlay {
@@ -24,6 +27,8 @@
   }
   &__content {
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 16px;
     border-radius: 4px;
@@ -35,8 +40,23 @@
   &__title {
     margin: 0;
   }
+  &__description {
+    flex-grow: 1;
+    position: relative;
+    p {
+      opacity: 0;
+      transition: opacity $timing-fast $easing;
+      position: absolute;
+    }
+  }
   &__cta {
+    display: flex;
+    align-items: center;
     margin: 0;
+    color: $color-blue
+  }
+  &__cta-icon {
+    margin-left: 12px;
   }
   &__description {
     margin: 0;
