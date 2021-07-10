@@ -1,0 +1,42 @@
+.slick-arrow {
+  border: 1px solid $color-blue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border $timing-fast $easing;
+  // overwrite default arrow
+  &:before {
+    content: '';
+  }
+  #{$interact} {
+    border: 1px solid $color-primary;
+    .slick-arrow__content {
+      color: $color-primary;
+    }
+  }
+  &__content {
+    margin: 0;
+    font-size: 20px;
+    color: $color-blue;
+    transition: color $timing-fast $easing;
+  }
+}
+
+.slick-next {
+  right: calc(-30px - 12px);
+}
+
+.slick-prev {
+  left: calc(-30px - 12px);
+}
+
+.slick-disabled {
+  border-color: $color-light;
+  pointer-events: none;
+  .slick-arrow__content {
+    color: $color-light;
+  }
+}

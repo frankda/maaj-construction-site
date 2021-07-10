@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import other components
 import Slider from "react-slick";
 import CardImage from '../card-image/card-image';
+import SlickArrow from './slick-arrow/slick-arrow';
 
 const Projects = () => {
   var settings = {
@@ -16,6 +17,8 @@ const Projects = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    nextArrow: <SlickArrow reverse={false} />,
+    prevArrow: <SlickArrow reverse={true} />,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,13 +47,15 @@ const Projects = () => {
     ]
   };
   return (
-    <div className="projects__slick-container">
-      <Slider {...settings}>
-        <CardImage />
-        <CardImage />
-        <CardImage />
-        <CardImage />
-      </Slider>
+    <div className="projects">
+      <div className="projects__slick-container">
+        <Slider {...settings}>
+          <CardImage />
+          <CardImage />
+          <CardImage />
+          <CardImage />
+        </Slider>
+      </div>
     </div>
   );
 }
