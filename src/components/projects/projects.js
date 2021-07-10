@@ -10,7 +10,7 @@ import CardImage from '../card-image/card-image';
 import SlickArrow from './slick-arrow/slick-arrow';
 
 const Projects = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,
@@ -46,6 +46,7 @@ const Projects = () => {
       }
     ]
   };
+
   return (
     <div className="projects">
       <div className="projects__slick-container">
