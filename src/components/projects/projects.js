@@ -9,6 +9,11 @@ import Slider from "react-slick";
 import CardImage from '../card-image/card-image';
 import SlickArrow from './slick-arrow/slick-arrow';
 
+// import assets
+import ColesModal1 from '@images/projects/marsden-park-coles/modal1.jpg';
+import ColesModal2 from '@images/projects/marsden-park-coles/modal2.jpg';
+import ColesModal3 from '@images/projects/marsden-park-coles/modal3.jpg';
+
 const Projects = () => {
   const settings = {
     dots: true,
@@ -47,14 +52,16 @@ const Projects = () => {
     ]
   };
 
+  const colesImages = [ColesModal1, ColesModal2, ColesModal3];
+
   return (
     <div className="projects">
       <div className="projects__slick-container">
         <Slider {...settings}>
+          <CardImage images={colesImages} />
+          {/* <CardImage />
           <CardImage />
-          <CardImage />
-          <CardImage />
-          <CardImage />
+          <CardImage /> */}
         </Slider>
       </div>
     </div>
