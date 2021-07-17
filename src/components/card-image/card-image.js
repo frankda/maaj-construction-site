@@ -40,8 +40,9 @@ const CardImage = ({images, cover}) => {
   }
 
   return (
-    <div className="card-image" style={{backgroundImage: `url("${cover}")`}}>
+    <div className="card-image">
       <div className="card-image__overlay"></div>
+      <div className="card-image__bg-image" style={{backgroundImage: `url("${cover}")`}}></div>
       <div className="card-image__content">
         <h4 className="card-image__title">name</h4>
         <div className="card-image__description">

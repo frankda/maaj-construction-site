@@ -1,12 +1,11 @@
 .card-image {
   position: relative;
   height: 500px;
-  background-position: center;
-  background-size: cover;
   margin: 8px;
   padding: 0 12px 12px 12px;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
 
   &:hover {
     .card-image__content {
@@ -15,14 +14,27 @@
     .card-image__description p {
       opacity: 1;
     }
+    .card-image__bg-image {
+      transform: scale(1.1);
+    }
   }
-
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform $timing-fast $easing;
+  }
   &__overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 1;
     background: linear-gradient(0deg, $color-primary, rgba($black, 0.5) 60%);
   }
   &__content {
