@@ -12,46 +12,46 @@ const Navigation = (props) => {
 
   const MOBILE_THRESHOLD = 1070;
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    handleScroll();
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('resize', handleResize);
+  //   handleResize();
+  //   handleScroll();
+  // }, []);
 
-  useEffect(() => {
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    if (currentInnerWidthState > MOBILE_THRESHOLD) {
-      setIsSidebarActiveState(false);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-    }
-  }, [currentInnerWidthState]);
+  // useEffect(() => {
+  //   if (currentInnerWidthState > MOBILE_THRESHOLD) {
+  //     setIsSidebarActiveState(false);
+  //     setIsMobile(false);
+  //   } else {
+  //     setIsMobile(true);
+  //   }
+  // }, [currentInnerWidthState]);
 
-  useEffect(() => {
-    setCurrentScrollPosState(currentScrollPosState);
-  }, [currentScrollPosState]);
+  // useEffect(() => {
+  //   setCurrentScrollPosState(currentScrollPosState);
+  // }, [currentScrollPosState]);
 
-  useEffect(() => {
-    if (currentScrollPosState > 100 && !isNavBarTriggeredState) {
-      setIsNavBarTriggeredState(true);
-    }
-    if (currentScrollPosState === 0) {
-      setIsNavBarTriggeredState(false);
-    }
-    (currentScrollPosState > previousScrollPosState && currentScrollPosState > 100) ?
-            setIsNavBarHiddenState(true) : setIsNavBarHiddenState(false);
-    setPreviousScrollPosState(currentScrollPosState);
-  }, [currentScrollPosState]);
+  // useEffect(() => {
+  //   if (currentScrollPosState > 100 && !isNavBarTriggeredState) {
+  //     setIsNavBarTriggeredState(true);
+  //   }
+  //   if (currentScrollPosState === 0) {
+  //     setIsNavBarTriggeredState(false);
+  //   }
+  //   (currentScrollPosState > previousScrollPosState && currentScrollPosState > 100) ?
+  //           setIsNavBarHiddenState(true) : setIsNavBarHiddenState(false);
+  //   setPreviousScrollPosState(currentScrollPosState);
+  // }, [currentScrollPosState]);
 
-  
+
   const handleScroll = () => {
     setCurrentScrollPosState(window.pageYOffset);
   };

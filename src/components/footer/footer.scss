@@ -5,7 +5,11 @@
     list-style-type: none;
     padding: 0;
   }
+  &__section-title {
+    color: $color-light;
+  }
   &__link {
+    color: $color-light;
   }
   &__contact-text {
     display: inline-block;
@@ -15,5 +19,6 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    color: $color-light;
   }
 }

@@ -11,14 +11,14 @@ const Footer = () => {
             Brand
           </div>
           <div className="footer__section col-md-4">
-            <h4>Quick links</h4>
+            <h4 className="footer__section-title">Quick links</h4>
             <ul className="footer__section-links">
               <li className="footer__link"><a href="#">test</a></li>
               <li className="footer__link"><a href="#">test</a></li>
             </ul>
           </div>
           <div className="footer__section col-md-4">
-            <h4>Contact us</h4>
+            <h4 className="footer__section-title">Contact us</h4>
             <ul className="footer__section-links">
               <li className="footer__link">
                 <a href="#">

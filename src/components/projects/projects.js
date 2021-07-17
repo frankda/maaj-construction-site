@@ -13,6 +13,7 @@ import SlickArrow from './slick-arrow/slick-arrow';
 import ColesModal1 from '@images/projects/marsden-park-coles/modal1.jpg';
 import ColesModal2 from '@images/projects/marsden-park-coles/modal2.jpg';
 import ColesModal3 from '@images/projects/marsden-park-coles/modal3.jpg';
+import Cover1 from '@images/projects/marsden-park-coles/cover1.jpg';
 
 const Projects = () => {
   const settings = {
@@ -58,10 +59,10 @@ const Projects = () => {
     <div className="projects">
       <div className="projects__slick-container">
         <Slider {...settings}>
-          <CardImage images={colesImages} />
-          {/* <CardImage />
-          <CardImage />
-          <CardImage /> */}
+          <CardImage cover={'https://i.nextmedia.com.au/News/CRN_14_coles_stock.jpg'} images={colesImages} />
+          <CardImage cover={'https://gopray.com.au/wp-prod/wp-content/uploads/2020/07/DIA-720x340.jpeg'} images={colesImages} />
+          <CardImage cover={'https://www.ahstatic.com/photos/8787_ho_00_p_1024x768.jpg'} images={colesImages} />
+          <CardImage cover={'https://www.crownsydney.com.au/getmedia/64d3a247-22e0-45ff-8618-a52db2d416e7/191120-Crown-Sydney-General-Property-Building-Form-2880x1648.jpg'} images={colesImages} />
         </Slider>
       </div>
     </div>

@@ -72,6 +72,9 @@
     right: 100px;
     bottom: 100px;
     background-color: papayawhip;
+    * {
+      height: inherit;
+    }
   }
   &__modal-overlay {
     position: fixed;
@@ -79,9 +82,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rebeccapurple;
+    background: rgba($black, 0.5);
+    backdrop-filter: blur(20px);
   }
   &__modal-carousel {
     height: 100%;
   }
+  &__carousel-item {
+    height: 100%;
+  }
+  &__modal-image {
+    width: 100%;
+    object-fit: cover;
+  }
 }
+
+

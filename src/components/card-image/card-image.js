@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 Modal.setAppElement('#___gatsby');
 
-const CardImage = () => {
+const CardImage = ({images, cover}) => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   const openModal = () => {
@@ -25,8 +25,22 @@ const CardImage = () => {
     slidesToScroll: 1
   };
 
+  const renderModalImages = () => {
+    if (images !== undefined) {
+      return (
+        images.map((img, i) => {
+          return (
+            <div key={i} className="card-image__carousel-item">
+              <img className="card-image__modal-image" src={img} alt="Site image" />
+            </div>
+          )
+        })
+      )
+    }
+  }
+
   return (
-    <div className="card-image" style={{backgroundImage: 'url("https://picsum.photos/500/400")'}}>
+    <div className="card-image" style={{backgroundImage: `url("${cover}")`}}>
       <div className="card-image__overlay"></div>
       <div className="card-image__content">
         <h4 className="card-image__title">name</h4>
@@ -44,30 +58,7 @@ const CardImage = () => {
         overlayClassName="card-image__modal-overlay"
       >
         <Slider {...carouselSettings} className="card-image__modal-carousel">
-          <div>
-            <button onClick={closeModal}>close1</button>
-            <div>I am a modal</div>
-            <form>
-              <input />
-              <button>tab navigation</button>
-              <button>stays</button>
-              <button>inside</button>
-              <button>the modal</button>
-            </form>
-          </div>
-
-          <div>
-            <button onClick={closeModal}>close2</button>
-            <div>I am a modal</div>
-            <form>
-              <input />
-              <button>tab navigation</button>
-              <button>stays</button>
-              <button>inside</button>
-              <button>the modal</button>
-            </form>
-          </div>
-
+          {renderModalImages()}
         </Slider>
       </Modal>
     </div>
