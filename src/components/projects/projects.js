@@ -1,6 +1,5 @@
 import React from 'react';
 import './projects.scss';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -10,7 +9,7 @@ import CardImage from '../card-image/card-image';
 import SlickArrow from './slick-arrow/slick-arrow';
 
 // import assets
-import ColesModal1 from '../../images/projects/marsden-park-coles/modal1.jpg';
+import ColesModal1 from './modal1.jpg';
 import ColesModal2 from '../../images/projects/marsden-park-coles/modal2.jpg';
 import ColesModal3 from '../../images/projects/marsden-park-coles/modal3.jpg';
 import Cover1 from '../../images/projects/marsden-park-coles/cover1.jpg';
