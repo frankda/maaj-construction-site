@@ -35,13 +35,13 @@ const IndexPage = () => {
           <CardGroup>
             <CardIcon
               icon="hard-hat"
-              title="test1"
-              description="lourme long tetxt lourme long tetxt lourme long tetxt lourme long tetxt"
+              title="Facade"
+              description="Sydney best construction service"
             ></CardIcon>
             <CardIcon
               icon="ruler-combined"
-              title="test2"
-              description="des1"
+              title="Ceiling"
+              description="Professional ceiling installation service"
             ></CardIcon>
           </CardGroup>
         </Section>
