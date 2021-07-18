@@ -10,9 +10,9 @@ import SlickArrow from './slick-arrow/slick-arrow';
 
 // import assets
 import ColesModal1 from './modal1.jpg';
-import ColesModal2 from '../../images/projects/marsden-park-coles/modal2.jpg';
-import ColesModal3 from '../../images/projects/marsden-park-coles/modal3.jpg';
-import Cover1 from '../../images/projects/marsden-park-coles/cover1.jpg';
+import ColesModal2 from './modal2.jpg';
+import ColesModal3 from './modal3.jpg';
+import Cover1 from './cover1.jpg';
 
 const Projects = () => {
   const settings = {
