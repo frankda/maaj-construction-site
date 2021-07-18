@@ -8,6 +8,7 @@ const CardIcon = (props) => {
   return (
     <div className="card-icon">
       <FontAwesomeIcon className="card-icon__icon" icon={props.icon} />
+      <i class="bi-alarm"></i>
       <h6 className="card-icon__title">{props.title}</h6>
       <p className="card-icon__description">{props.description}</p>
     </div>
