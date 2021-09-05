@@ -30,7 +30,7 @@ const IndexPage = () => {
         <Banner />
 
         {/* What we offer section */}
-        <Section>
+        {/* <Section>
           <h2>What we offer</h2>
           <CardGroup>
             <CardIcon
@@ -44,11 +44,11 @@ const IndexPage = () => {
               description="Professional ceiling installation service"
             ></CardIcon>
           </CardGroup>
-        </Section>
+        </Section> */}
 
         {/* Projects section */}
         <Section>
-          <h2>Our Projects</h2>
+          <h5>Our Projects</h5>
           <Projects />
         </Section>
       </main>

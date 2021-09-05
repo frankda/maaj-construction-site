@@ -2,21 +2,29 @@
   position: relative;
   height: 500px;
   margin: 8px;
-  padding: 0 12px 12px 12px;
+  // padding: 0 12px 12px 12px;
   display: flex;
   align-items: flex-end;
-  overflow: hidden;
 
   &:hover {
     .card-image__content {
       height: 240px;
     }
-    .card-image__description p {
+    .card-image__description {
       opacity: 1;
     }
     .card-image__bg-image {
       transform: scale(1.1);
     }
+    .card-image__overlay {
+      opacity: 1;
+    }
+  }
+  &__bg-image-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
   &__bg-image {
     position: absolute;
@@ -35,43 +43,56 @@
     left: 0;
     top: 0;
     z-index: 1;
-    background: linear-gradient(0deg, $color-primary, rgba($black, 0.5) 60%);
+    background: rgba($black, 0.5);
+    opacity: 0;
+    transition: opacity $timing-fast $easing;
   }
   &__content {
     z-index: 1;
     display: flex;
+    position: absolute;
+
     flex-direction: column;
     width: 100%;
-    padding: 16px;
-    border-radius: 4px;
-    background-color: lightgray;
+    padding: 32px 24px;
+    background-color: $white;
     height: 80px;
-    cursor: pointer;
     transition: height $timing-fast $easing;
   }
   &__title {
     margin: 0;
+    align-self: center;
+    text-transform: uppercase;
+  }
+  &__description-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
   }
   &__description {
-    flex-grow: 1;
-    position: relative;
-    p {
-      opacity: 0;
-      transition: opacity $timing-fast $easing;
-      position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all $timing-fast $easing;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    bottom: 28px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    button {
+      align-self: center;
     }
   }
   &__cta {
     display: flex;
     align-items: center;
     margin: 0;
-    color: $color-blue
   }
   &__cta-icon {
     margin-left: 12px;
-  }
-  &__description {
-    margin: 0;
   }
 
   // ================================

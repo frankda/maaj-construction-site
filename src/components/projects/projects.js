@@ -17,13 +17,16 @@ import Cover1 from './cover1.jpg';
 const Projects = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 6000,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
     nextArrow: <SlickArrow reverse={false} />,
     prevArrow: <SlickArrow reverse={true} />,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,

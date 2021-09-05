@@ -1,6 +1,5 @@
 import React from 'react';
 import './card-image.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from 'react-modal';
 import Slider from "react-slick";
 
@@ -42,13 +41,17 @@ const CardImage = ({images, cover}) => {
   return (
     <div className="card-image">
       <div className="card-image__overlay"></div>
-      <div className="card-image__bg-image" style={{backgroundImage: `url("${cover}")`}}></div>
+      <div className="card-image__bg-image-wrapper">
+        <div className="card-image__bg-image" style={{backgroundImage: `url("${cover}")`}}></div>
+      </div>
       <div className="card-image__content">
-        <h4 className="card-image__title">name</h4>
-        <div className="card-image__description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minus quasi fugiat odit fugit, eos dicta eius optio obcaecati veritatis magnam consequatur, alias, esse in repudiandae tempora animi voluptas corporis!</p>
+        <h6 className="card-image__title">name</h6>
+        <div className="card-image__description-wrapper">
+          <div className="card-image__description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minus quasi fugiat</p>
+            <button onClick={openModal} className="card-image__cta btn" href="#">Take a look</button>
+          </div>
         </div>
-        <p onClick={openModal} className="card-image__cta" href="#">Take a look<FontAwesomeIcon className="card-image__cta-icon" icon="chevron-right" /></p>
       </div>
 
       <Modal

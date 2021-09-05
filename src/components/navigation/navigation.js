@@ -90,7 +90,7 @@ const Navigation = (props) => {
     <div className={navBarClass(isNavBarTriggeredState, isNavBarHiddenState)}>
       <div className="global-nav__brand-container">
         <div className="global-nav__brand">
-          <p>Brand</p>
+          <p>Tramix</p>
         </div>
 
         {props.isMobile

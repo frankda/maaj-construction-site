@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="footer__bot-footer col">
-            <p>&#169;2021 Carpet Paradise. <b>All rights reserved</b></p>
+            <p>&#169;2021 Tramix. <b>All rights reserved</b></p>
           </div>
         </div>
       </div>
