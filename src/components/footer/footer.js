@@ -4,42 +4,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="footer__section col-md-4">
-            Brand
+    <footer>
+      <div class="component fpc-grid container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="component fpc-grid container">
+                <div class="row">
+                  <div class="col">
+                    <p class="h4 colour-fg--white">Frasers Property Industrial</p>
+                    <div class="fpc-footer__row-one row">
+                      <div class="col-12 col-lg-4">
+                        <div class="component fpc-wysiwyg colour-fg--white">
+                          <p class="text-small">
+                            Frasers Property Industrial acknowledges the Traditional Custodians of the land which our business operates.
+                            We pay our respects to Aboriginal and Torres Strait Islanders Elders’ past, present and future
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 offset-lg-5">
+                        <div class="component fpc-wysiwyg colour-fg--white">
+                          <p class="colour-fg--grey-700 mb-0"><strong>For all enquiries</strong></p>
+                          <p><a href="mailto:info@fraserspropertyindustrial.com">info@fraserspropertyindustrial.com</a></p>
+                          <p class="colour-fg--grey-700 mb-0"><strong>A part of</strong></p>
+                          <p>Frasers Property Limited</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="footer__section col-md-4">
-            <h4 className="footer__section-title">Quick links</h4>
-            <ul className="footer__section-links">
-              <li className="footer__link"><a href="#">test</a></li>
-              <li className="footer__link"><a href="#">test</a></li>
-            </ul>
-          </div>
-          <div className="footer__section col-md-4">
-            <h4 className="footer__section-title">Contact us</h4>
-            <ul className="footer__section-links">
-              <li className="footer__link">
-                <a href="#">
-                  <FontAwesomeIcon className="footer__contact-icon" icon="phone" />
-                  <p className="footer__contact-text">0416659663</p>
-                </a>
-              </li>
-              <li className="footer__link">
-                <a href="#">
-                  <FontAwesomeIcon className="footer__contact-icon" icon="envelope" />
-                  <p className="footer__contact-text">450892952@qq.com</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="row">
-          <div className="footer__bot-footer col">
-            <p>&#169;2021 Tramix. <b>All rights reserved</b></p>
-          </div>
-        </div>
       </div>
     </footer>
   )
