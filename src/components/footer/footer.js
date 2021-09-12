@@ -11,12 +11,12 @@ const Footer = () => {
               <div class="component fpc-grid container">
                 <div class="row">
                   <div class="col">
-                    <p class="h4 colour-fg--white">Frasers Property Industrial</p>
+                    <p class="h4 colour-fg--white">Tramix</p>
                     <div class="fpc-footer__row-one row">
                       <div class="col-12 col-lg-4">
                         <div class="component fpc-wysiwyg colour-fg--white">
                           <p class="text-small">
-                            Frasers Property Industrial acknowledges the Traditional Custodians of the land which our business operates.
+                            Tramix acknowledges the Traditional Custodians of the land which our business operates.
                             We pay our respects to Aboriginal and Torres Strait Islanders Elders’ past, present and future
                           </p>
                         </div>
@@ -24,9 +24,9 @@ const Footer = () => {
                       <div class="col-12 col-lg-3 offset-lg-5">
                         <div class="component fpc-wysiwyg colour-fg--white">
                           <p class="colour-fg--grey-700 mb-0"><strong>For all enquiries</strong></p>
-                          <p><a href="mailto:info@fraserspropertyindustrial.com">info@fraserspropertyindustrial.com</a></p>
+                          <p><a href="mailto:sales@maajinteriors.org">sales@maajinteriors.org</a></p>
                           <p class="colour-fg--grey-700 mb-0"><strong>A part of</strong></p>
-                          <p>Frasers Property Limited</p>
+                          <p>Tramix Pty Ltd</p>
                         </div>
                       </div>
                     </div>

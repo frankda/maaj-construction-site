@@ -6,20 +6,7 @@
   display: flex;
   align-items: flex-end;
 
-  &:hover {
-    .card-image__content {
-      height: 240px;
-    }
-    .card-image__description {
-      opacity: 1;
-    }
-    .card-image__bg-image {
-      transform: scale(1.1);
-    }
-    .card-image__overlay {
-      opacity: 1;
-    }
-  }
+
   &__bg-image-wrapper {
     overflow: hidden;
     position: relative;
@@ -56,7 +43,7 @@
     width: 100%;
     padding: 32px 24px;
     background-color: $white;
-    height: 80px;
+    height: 135px;
     transition: height $timing-fast $easing;
   }
   &__title {
@@ -94,6 +81,31 @@
   &__cta-icon {
     margin-left: 12px;
   }
+  &__cta--mobile {
+    margin-top: 20px;
+  }
+  @media (min-width: $md) {
+    &:hover {
+      .card-image__content {
+        height: 240px;
+      }
+      .card-image__description {
+        opacity: 1;
+      }
+      .card-image__bg-image {
+        transform: scale(1.1);
+      }
+      .card-image__overlay {
+        opacity: 1;
+      }
+    }
+    &__content {
+      height: 80px;
+    }
+    &__cta--mobile {
+      display: none;
+    }
+  }
 
   // ================================
   // React modal overwrite (desktop)
@@ -107,6 +119,10 @@
     background-color: papayawhip;
     * {
       height: inherit;
+    }
+    @media (max-width: $md) {
+      left: 10px;
+      right: 10px;
     }
   }
   &__modal-overlay {

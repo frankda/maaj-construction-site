@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './card-image.scss';
 import Modal from 'react-modal';
 import Slider from "react-slick";
@@ -6,7 +6,9 @@ import Slider from "react-slick";
 Modal.setAppElement('#___gatsby');
 
 const CardImage = ({images, cover}) => {
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [carouselArrow, setCarouselArrow] = useState(true);
+
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -16,12 +18,21 @@ const CardImage = ({images, cover}) => {
     setModalIsOpen(false);
   }
 
+  useEffect(() => {
+    if (window.matchMedia('(max-width: 992px)').matches) {
+      setCarouselArrow(false);
+    } else {
+      setCarouselArrow(true);
+    }
+  }, [])
+
   const carouselSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: carouselArrow
   };
 
   const renderModalImages = () => {
@@ -46,6 +57,7 @@ const CardImage = ({images, cover}) => {
       </div>
       <div className="card-image__content">
         <h6 className="card-image__title">name</h6>
+        <button onClick={openModal} className="card-image__cta--mobile btn" href="#">Take a look</button>
         <div className="card-image__description-wrapper">
           <div className="card-image__description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minus quasi fugiat</p>

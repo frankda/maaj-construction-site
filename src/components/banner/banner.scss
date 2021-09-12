@@ -1,8 +1,12 @@
 .banner {
-  background-color: $color-primary;
   padding: 105px 0 105px 0;
   position: relative;
   margin-bottom: $banner-tilt-height;
+  background: url('./img/banner-bg.jpg'), rgba($black, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &__content {
     margin-top: 100px;

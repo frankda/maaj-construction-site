@@ -1,6 +1,7 @@
 import React from 'react'
 import './banner.scss'
 import Tilt from './assets/tilt.svg';
+import BannerImage from './img/banner-bg.jpg';
 
 const Banner = () => {
   return (
@@ -15,12 +16,12 @@ const Banner = () => {
                 {/* <button className="banner__content-btn">Button</button> */}
               </div>
             </div>
-            <div className="offset-md-1 col-md-6">
+            {/* <div className="offset-md-1 col-md-6">
               <div className="banner__img-block">
                 <div className="banner__img">
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <img className="banner__tilt-divider" src={Tilt} alt="" /> */}
